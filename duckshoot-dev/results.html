@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Призовой тир</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="_basic/i/logog1-1.png">
+    <!-- AOS 3.0.0-beta.6 plugin CSS (Animations) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&family=Overpass:wght@100;200;300;400;500;600;700;800;900&subset=latin&display=swap"
+          rel="stylesheet">
+    <!-- Startup CSS + Bootstrap CSS (Styles for all blocks) - Remove ".min" if you want to edit a css code -->
+    <link href="_basic/css/styles.min.css" rel="stylesheet"/>
+    <link href="_basic/css/custom.css" rel="stylesheet"/>
+    <!-- jQuery 3.6.0 (uncomment line below if you need jQuery) -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <!-- Open graph settings (social networks sharing settings) -->
+    <!-- Open graph settings end -->
+	<script src="_basic/js/jquery-3.3.1.min.js"></script>
+</head>
+<body class="bg-game">
+
+<!-- Form 6 -->
+<section class="text-center bg-position-center bg-size-fit-y bg-game" >
+    <div class="container col-xxl-12">
+        <div class="flex-md-row w-auto min-vh-100 row align-items-lg-start align-items-center align-items-md-center pt-xxl-8">
+            <div class="col-md-3"></div>
+			<div class="col-md-6">
+				<img src="_basic/i/logog1.png" srcset="_basic/i/logog1.png 2x" alt="" class="img-fluid mb-12 mt-2" style="width: 200px">
+
+                <h1 class="mb-2 mt-2 text-white">
+                    Ваш приз
+                </h1>
+                <h3 class="mb-4 mt-2 text-white">
+                    +50 рейтинговых очков
+                </h3>
+                <button class="btn  mb-6 text-white shadow goto-menu-initial button-19" style="">
+                    В меню
+                </button>
+            </div>
+			<div class="col-md-3"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS 3.0.0-beta.6 plugin JS (Animations) -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="_basic/js/jquery.maskedinput.min.js"></script>
+<!-- Startup JS (Custom js for all blocks) - Remove ".min" if you want to edit a JS code -->
+<script src="_basic/js/scripts.min.js"></script>
+<script src="_basic/js/client.base.min.js"></script>
+<script>
+    var clientjs = new ClientJS();
+    var fingerprint = {};
+    try {
+        fingerprint = {
+            fingerprint : clientjs.getFingerprint().toString(),
+            browser : clientjs.getBrowser(),
+            OS : clientjs.getOS(),
+            osVersion : clientjs.getOSVersion()
+        }
+    } catch (e) {
+        fingerprint = {};
+    }
+</script>
+<script src="_basic/js/custom.js"></script>
+</body>
+</html>
