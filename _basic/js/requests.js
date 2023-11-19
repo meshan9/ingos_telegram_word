@@ -45,6 +45,87 @@ function get_counters() {
 
 function get_leaderboard() {
     loader('start');
+
+    for (let i = 0; i < 50; i++) {
+        $('.leaderboard-daily-content').append('<tr>\n' +
+            '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1 tg-0lax2" rowspan="2">\n' +
+            '\t\t\t\t\t\t\t\t\t\t\t<i class="fe fe-award mr-2"></i>\n' +
+            '\t\t\t\t\t\t\t\t\t\t</td>\n' +
+            '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1 tg-cly2 tg-0lax2" rowspan="2">\n' +
+            '\t\t\t\t\t\t\t\t\t\t\t<h5 class="mr-2">'+i+'</h5>\n' +
+            '\t\t\t\t\t\t\t\t\t\t</td>\n' +
+            '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1">\n' +
+            '\t\t\t\t\t\t\t\t\t\t\t<p class="mt-0 mb-0">'+i+'</p>\n' +
+            '\t\t\t\t\t\t\t\t\t\t</td>\n' +
+            '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1">\n' +
+            '\t\t\t\t\t\t\t\t\t\t\t<p class="mt-0  mb-0 font-weight-bold">'+i+'</p>\n' +
+            '\t\t\t\t\t\t\t\t\t\t</td>\n' +
+            '\t\t\t\t\t\t\t\t\t</tr>\n' +
+            '\t\t\t\t\t\t\t\t\t<tr>\n' +
+            '\t\t\t\t\t\t\t\t\t\t<td class="tg-0lax pt-0 pb-0" colspan="2">\n' +
+            '\t\t\t\t\t\t\t\t\t\t\t<p class="f-12 mt-0 mb-0" style="color: var(--bs-teal)">Приз: 1000 руб на покупки</p>\n' +
+            '\t\t\t\t\t\t\t\t\t\t</td>\n' +
+            '\t\t\t\t\t\t\t\t\t</tr>')
+    }
+
+    $('.daily-player-place').html()
+            $('.daily-player-place').html(1);
+            $('.daily-player-score').html(123);
+
+    
+        for (let i = 0; i < 50; i ++) {
+            $('.leaderboard-weekly-content').append('<tr>\n' +
+                '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1 tg-0lax2" rowspan="2">\n' +
+                '\t\t\t\t\t\t\t\t\t\t\t<i class="fe fe-award mr-2"></i>\n' +
+                '\t\t\t\t\t\t\t\t\t\t</td>\n' +
+                '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1 tg-cly2 tg-0lax2" rowspan="2">\n' +
+                '\t\t\t\t\t\t\t\t\t\t\t<h5 class="mr-2">'+i+'</h5>\n' +
+                '\t\t\t\t\t\t\t\t\t\t</td>\n' +
+                '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1">\n' +
+                '\t\t\t\t\t\t\t\t\t\t\t<p class="mt-0 mb-0">'+i+'</p>\n' +
+                '\t\t\t\t\t\t\t\t\t\t</td>\n' +
+                '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1">\n' +
+                '\t\t\t\t\t\t\t\t\t\t\t<p class="mt-0  mb-0 font-weight-bold">'+i+'</p>\n' +
+                '\t\t\t\t\t\t\t\t\t\t</td>\n' +
+                '\t\t\t\t\t\t\t\t\t</tr>\n' +
+                '\t\t\t\t\t\t\t\t\t<tr>\n' +
+                '\t\t\t\t\t\t\t\t\t\t<td class="tg-0lax pt-0 pb-0" colspan="2">\n' +
+                '\t\t\t\t\t\t\t\t\t\t\t<p class="f-12 mt-0 mb-0" style="color: var(--bs-teal)">Приз: 1000 руб на покупки</p>\n' +
+                '\t\t\t\t\t\t\t\t\t\t</td>\n' +
+                '\t\t\t\t\t\t\t\t\t</tr>')
+        }
+
+        $('.weekly-player-place').html()
+            $('.weekly-player-place').html(2);
+            $('.weekly-player-score').html(234);
+
+            
+        for (let i = 0; i < 100; i++) {
+            $('.leaderboard-monthly-content').append('<tr>\n' +
+                '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1 tg-0lax2" rowspan="2">\n' +
+                '\t\t\t\t\t\t\t\t\t\t\t<i class="fe fe-award mr-2"></i>\n' +
+                '\t\t\t\t\t\t\t\t\t\t</td>\n' +
+                '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1 tg-cly2 tg-0lax2" rowspan="2">\n' +
+                '\t\t\t\t\t\t\t\t\t\t\t<h5 class="mr-2">'+i+'</h5>\n' +
+                '\t\t\t\t\t\t\t\t\t\t</td>\n' +
+                '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1">\n' +
+                '\t\t\t\t\t\t\t\t\t\t\t<p class="mt-0 mb-0">'+i+'</p>\n' +
+                '\t\t\t\t\t\t\t\t\t\t</td>\n' +
+                '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1">\n' +
+                '\t\t\t\t\t\t\t\t\t\t\t<p class="mt-0  mb-0 font-weight-bold">'+i+'</p>\n' +
+                '\t\t\t\t\t\t\t\t\t\t</td>\n' +
+                '\t\t\t\t\t\t\t\t\t</tr>\n' +
+                '\t\t\t\t\t\t\t\t\t<tr>\n' +
+                '\t\t\t\t\t\t\t\t\t\t<td class="tg-0lax pt-0 pb-0" colspan="2">\n' +
+                '\t\t\t\t\t\t\t\t\t\t\t<p class="f-12 mt-0 mb-0" style="color: var(--bs-teal)">Приз: 1000 руб на покупки</p>\n' +
+                '\t\t\t\t\t\t\t\t\t\t</td>\n' +
+                '\t\t\t\t\t\t\t\t\t</tr>')
+        }
+
+        $('.monthly-player-place').html()
+            $('.monthly-player-place').html(3);
+            $('.monthly-player-score').html(345);
+
     $.ajax({
         url: 'https://'+host+'/api/leaderboard',
         crossdomain: true,

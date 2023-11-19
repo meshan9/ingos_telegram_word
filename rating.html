@@ -1,9 +1,301 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Documentq</title>
-    </head>
-    <body></body>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+	<meta charset="utf-8">
+	<title>Призовой тир</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="_basic/i/logog1.png">
+	<!-- AOS 3.0.0-beta.6 plugin CSS (Animations) -->
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&family=Overpass:wght@100;200;300;400;500;600;700;800;900&subset=latin&display=swap"
+		  rel="stylesheet">
+	<!-- Startup CSS + Bootstrap CSS (Styles for all blocks) - Remove ".min" if you want to edit a css code -->
+	<link href="_basic/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="_basic/css/styles.min.css" rel="stylesheet"/>
+	<link href="_basic/css/custom.css" rel="stylesheet"/>
+	<link href="_basic/css/feather.css" rel="stylesheet"/>
+	<!-- jQuery 3.6.0 (uncomment line below if you need jQuery) -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+	<!-- Open graph settings (social networks sharing settings) -->
+	<!-- Open graph settings end -->
+	<style>
+		html {
+			background-color: var(--bs-blue);
+		}
+	</style>
+</head>
+<body>
+
+
+<!-- RATING -->
+<section class="text-center bg-position-center bg-size-fit-y bg-game rating no-main" style="top: 0px; display: none">
+	<div class="container col-xxl-12">
+		<div class="flex-md-row w-auto row  pt-xxl-8">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<h1 class="mb-2 mt-4" style="color: #FFFFFF">
+					Рейтинг
+				</h1>
+				<button class="btn w-100 mt-2 mb-4 text-white shadow button-53" style="">
+					Получи 100,000 руб. за сбор всей коллекции!
+				</button>
+				<ul class="nav nav-pills mb-3 justify-content-center" id="rating-tab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<button class="nav-link active" id="rating-home-tab" data-bs-toggle="pill" data-bs-target="#rating-home" type="button" role="tab" aria-controls="rating-home" aria-selected="true">День</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" id="rating-profile-tab" data-bs-toggle="pill" data-bs-target="#rating-profile" type="button" role="tab" aria-controls="rating-profile" aria-selected="false">Неделя</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" id="rating-profile1-tab" data-bs-toggle="pill" data-bs-target="#rating-profile1" type="button" role="tab" aria-controls="rating-profile1" aria-selected="false">Месяц</button>
+					</li>
+				</ul>
+				<div class="tab-content" id="rating-tabContent">
+					<div class="tab-pane fade show active" id="rating-home" role="tabpanel" aria-labelledby="rating-home-tab">
+						<div class="card card-body text-center mb-2">
+							<h5 class="mb-2">
+								Лучшие 50 игроков
+							</h5>
+							<div style="overflow-y: scroll; height: 250px">
+								<table class="tg w-100">
+									<thead>
+									<tr>
+										<td class="tg-cly1" colspan="2">
+											<p class="text-muted mb-0">Место</p>
+										</td>
+										<td class="tg-cly1 text-muted">
+											<p class="mb-0">Участник</p>
+										</td>
+										<td class="tg-cly1 text-muted">
+											<p class="mb-0">Очки</p>
+										</td>
+									</tr>
+									</thead>
+									<tbody class="leaderboard-daily-content">
+
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="card card-body text-left mb-2">
+							<table class="tg w-100" style="overflow-y: hidden; height: 100px">
+								<thead>
+								<tr>
+									<td class="tg-cly1" colspan="2">
+										<p class="text-muted mb-0">Ваше место</p>
+									</td>
+									<td class="tg-cly1 text-muted">
+										<p class="mb-0">Очки</p>
+									</td>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="tg-cly1 tg-0lax2" rowspan="2">
+										<i class="fe fe-award mr-2"></i>
+									</td>
+									<td class="tg-cly1 tg-cly2 tg-0lax2" rowspan="2">
+										<h5 class="mr-2 daily-player-place"></h5>
+									</td>
+									<td class="tg-cly1">
+										<p class="mt-0  mb-0 daily-player-score font-weight-bold"></p>
+									</td>
+								</tr>
+								<tr>
+									<td class="tg-0lax pt-0 pb-0" colspan="3">
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="rating-profile" role="tabpanel" aria-labelledby="rating-profile-tab" style="min-height: 300px">
+						<div class="card card-body text-center mb-2">
+							<h5 class="mb-2">
+								Лучшие 50 игроков
+							</h5>
+							<div style="overflow-y: scroll; height: 250px">
+								<table class="tg w-100">
+									<thead>
+									<tr>
+										<td class="tg-cly1" colspan="2">
+											<p class="text-muted mb-0">Место</p>
+										</td>
+										<td class="tg-cly1 text-muted">
+											<p class="mb-0">Участник</p>
+										</td>
+										<td class="tg-cly1 text-muted">
+											<p class="mb-0">Очки</p>
+										</td>
+									</tr>
+									</thead>
+									<tbody class="leaderboard-weekly-content">
+
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="card card-body text-left mb-2">
+							<table class="tg w-100" style="overflow-y: hidden; height: 100px">
+								<thead>
+								<tr>
+									<td class="tg-cly1" colspan="2">
+										<p class="text-muted mb-0">Ваше место</p>
+									</td>
+									<td class="tg-cly1 text-muted">
+										<p class="mb-0">Очки</p>
+									</td>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="tg-cly1 tg-0lax2" rowspan="2">
+										<i class="fe fe-award mr-2"></i>
+									</td>
+									<td class="tg-cly1 tg-cly2 tg-0lax2" rowspan="2">
+										<h5 class="mr-2 weekly-player-place"></h5>
+									</td>
+									<td class="tg-cly1">
+										<p class="mt-0  mb-0 weekly-player-score font-weight-bold"></p>
+									</td>
+								</tr>
+								<tr>
+									<td class="tg-0lax pt-0 pb-0" colspan="3">
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="rating-profile1" role="tabpanel" aria-labelledby="rating-profile1-tab" style="min-height: 300px">
+						<div class="card card-body text-center mb-2">
+							<h5 class="mb-2">
+								Лучшие 100 игроков
+							</h5>
+							<div style="overflow-y: scroll; height: 250px">
+								<table class="tg w-100">
+									<thead>
+									<tr>
+										<td class="tg-cly1" colspan="2">
+											<p class="text-muted mb-0">Место</p>
+										</td>
+										<td class="tg-cly1 text-muted">
+											<p class="mb-0">Участник</p>
+										</td>
+										<td class="tg-cly1 text-muted">
+											<p class="mb-0">Очки</p>
+										</td>
+									</tr>
+									</thead>
+									<tbody class="leaderboard-monthly-content">
+
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="card card-body text-left mb-2">
+							<table class="tg w-100" style="overflow-y: hidden; height: 100px">
+								<thead>
+								<tr>
+									<td class="tg-cly1" colspan="2">
+										<p class="text-muted mb-0">Ваше место</p>
+									</td>
+									<td class="tg-cly1 text-muted">
+										<p class="mb-0">Очки</p>
+									</td>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="tg-cly1 tg-0lax2" rowspan="2">
+										<i class="fe fe-award mr-2"></i>
+									</td>
+									<td class="tg-cly1 tg-cly2 tg-0lax2" rowspan="2">
+										<h5 class="mr-2 monthly-player-place"></h5>
+									</td>
+									<td class="tg-cly1">
+										<p class="mt-0  mb-0 monthly-player-score font-weight-bold"></p>
+									</td>
+								</tr>
+								<tr>
+									<td class="tg-0lax pt-0 pb-0" colspan="3">
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+	</div>
+</section>
+
+
+
+<!--Loader overlay-->
+<div class="loader" style="display: none">
+	<div class="loader_inner">
+		<div class="loader_content justify-content-center">
+			<button class="btn w-100 mt-2 mb-4 text-white shadow button-53 justify-content-center" style="">
+				<table>
+					<tr>
+						<td class="spin mr-2">
+							<i class="fe fe-aperture"></i>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Подождите...
+						</td>
+					</tr>
+				</table>
+			</button>
+		</div>
+	</div>
+</div>
+<script>
+	function loader(key) {
+		if (key === 'start') {
+			$('.loader').show();
+		} else {
+			$('.loader').fadeOut(800);
+		}
+
+		return false;
+	}
+</script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="_basic/js/jquery-3.3.1.min.js"></script>
+<!-- AOS 3.0.0-beta.6 plugin JS (Animations) -->
+<script src="_basic/js/jquery.maskedinput.min.js"></script>
+<!-- Startup JS (Custom js for all blocks) - Remove ".min" if you want to edit a JS code -->
+<script src="_basic/js/scripts.min.js"></script>
+<script src="_basic/js/client.base.min.js"></script>
+<script>
+	var clientjs = new ClientJS();
+	var fingerprint = {};
+	try {
+		fingerprint = {
+			fingerprint : clientjs.getFingerprint().toString(),
+			browser : clientjs.getBrowser(),
+			OS : clientjs.getOS(),
+			osVersion : clientjs.getOSVersion()
+		}
+	} catch (e) {
+		fingerprint = {};
+	}
+</script>
+<script src="_basic/js/custom.js"></script>
+<script src="_basic/js/controls.js"></script>
+<script src="_basic/js/requests.js"></script>
+<script>
+    $('.main').hide();
+    $('.rating').show();
+    $('.goback').show();
+    get_leaderboard();
+</script>
+</body>
 </html>
