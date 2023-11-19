@@ -45,7 +45,7 @@ function get_counters() {
 
 function get_leaderboard() {
     loader('start');
-
+    console.log("qwe")
     for (let i = 0; i < 50; i++) {
         $('.leaderboard-daily-content').append('<tr>\n' +
             '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1 tg-0lax2" rowspan="2">\n' +
