@@ -379,7 +379,7 @@ function get_games() {
                     }
 
                     $('.rewards-content').append('<div class="card card-body text-left mb-2">\n' +
-                        '\t\t\t\t\t\t\t\tЗадание ' + next_index + '\n' +
+                        '\t\t\t\t\t\t\t\t' +
                         '\t\t\t\t\t\t\t<h6 class="mb-4 mt-2">\n' +
                         '\t\t\t\t\t\t\t\t<table>\n' +
                         '\t\t\t\t\t\t\t\t\t<tr>\n' +
@@ -387,7 +387,7 @@ function get_games() {
                         '\t\t\t\t\t\t\t\t\t\t\t<img src="_basic/i/rewards.svg" alt="" style="width: 70px" class="mr-2">\n' +
                         '\t\t\t\t\t\t\t\t\t\t</td>\n' +
                         '\t\t\t\t\t\t\t\t\t\t<td>\n' +
-                        '\t\t\t\t\t\t\t\t\t\t\t<h5>'+json.rewards[i].short_description+ 'short' + '</h5>\n' +
+                        '\t\t\t\t\t\t\t\t\t\t\t<h5>'+json.rewards[i].short_description + '</h5>\n' +
                         '\t\t\t\t\t\t\t\t<a target="_blank" href="'+json.rewards[i].link+ '" class="btn w-100 mb-2 text-white shadow button-19 bsm" style="'+header_link+'">\n' +
                         '\t\t\t\t\t\t\t\t\tОткрыть ссылку\n' +
                         '\t\t\t\t\t\t\t\t</a>\n'+
