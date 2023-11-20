@@ -47,18 +47,19 @@ function get_leaderboard() {
     loader('start');
     console.log("qwe")
     for (let i = 0; i < 50; i++) {
+        const index = i + 1;
         $('.leaderboard-daily-content').append('<tr>\n' +
             '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1 tg-0lax2" rowspan="2">\n' +
             '\t\t\t\t\t\t\t\t\t\t\t<i class="fe fe-award mr-2"></i>\n' +
             '\t\t\t\t\t\t\t\t\t\t</td>\n' +
             '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1 tg-cly2 tg-0lax2" rowspan="2">\n' +
-            '\t\t\t\t\t\t\t\t\t\t\t<h5 class="mr-2">'+i+'</h5>\n' +
+            '\t\t\t\t\t\t\t\t\t\t\t<h5 class="mr-2">'+index+'</h5>\n' +
             '\t\t\t\t\t\t\t\t\t\t</td>\n' +
             '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1">\n' +
-            '\t\t\t\t\t\t\t\t\t\t\t<p class="mt-0 mb-0">'+i+'</p>\n' +
+            '\t\t\t\t\t\t\t\t\t\t\t<p class="mt-0 mb-0">'+index+'</p>\n' +
             '\t\t\t\t\t\t\t\t\t\t</td>\n' +
             '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1">\n' +
-            '\t\t\t\t\t\t\t\t\t\t\t<p class="mt-0  mb-0 font-weight-bold">'+i+'</p>\n' +
+            '\t\t\t\t\t\t\t\t\t\t\t<p class="mt-0  mb-0 font-weight-bold">'+index+'</p>\n' +
             '\t\t\t\t\t\t\t\t\t\t</td>\n' +
             '\t\t\t\t\t\t\t\t\t</tr>\n' +
             '\t\t\t\t\t\t\t\t\t<tr>\n' +
@@ -74,18 +75,19 @@ function get_leaderboard() {
 
     
         for (let i = 0; i < 50; i ++) {
+            const index = i + 1;
             $('.leaderboard-weekly-content').append('<tr>\n' +
                 '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1 tg-0lax2" rowspan="2">\n' +
                 '\t\t\t\t\t\t\t\t\t\t\t<i class="fe fe-award mr-2"></i>\n' +
                 '\t\t\t\t\t\t\t\t\t\t</td>\n' +
                 '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1 tg-cly2 tg-0lax2" rowspan="2">\n' +
-                '\t\t\t\t\t\t\t\t\t\t\t<h5 class="mr-2">'+i+'</h5>\n' +
+                '\t\t\t\t\t\t\t\t\t\t\t<h5 class="mr-2">'+index+'</h5>\n' +
                 '\t\t\t\t\t\t\t\t\t\t</td>\n' +
                 '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1">\n' +
-                '\t\t\t\t\t\t\t\t\t\t\t<p class="mt-0 mb-0">'+i+'</p>\n' +
+                '\t\t\t\t\t\t\t\t\t\t\t<p class="mt-0 mb-0">'+index+'</p>\n' +
                 '\t\t\t\t\t\t\t\t\t\t</td>\n' +
                 '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1">\n' +
-                '\t\t\t\t\t\t\t\t\t\t\t<p class="mt-0  mb-0 font-weight-bold">'+i+'</p>\n' +
+                '\t\t\t\t\t\t\t\t\t\t\t<p class="mt-0  mb-0 font-weight-bold">'+index+'</p>\n' +
                 '\t\t\t\t\t\t\t\t\t\t</td>\n' +
                 '\t\t\t\t\t\t\t\t\t</tr>\n' +
                 '\t\t\t\t\t\t\t\t\t<tr>\n' +
@@ -101,18 +103,19 @@ function get_leaderboard() {
 
             
         for (let i = 0; i < 100; i++) {
+            const index = i + 1;
             $('.leaderboard-monthly-content').append('<tr>\n' +
                 '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1 tg-0lax2" rowspan="2">\n' +
                 '\t\t\t\t\t\t\t\t\t\t\t<i class="fe fe-award mr-2"></i>\n' +
                 '\t\t\t\t\t\t\t\t\t\t</td>\n' +
                 '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1 tg-cly2 tg-0lax2" rowspan="2">\n' +
-                '\t\t\t\t\t\t\t\t\t\t\t<h5 class="mr-2">'+i+'</h5>\n' +
+                '\t\t\t\t\t\t\t\t\t\t\t<h5 class="mr-2">'+index+'</h5>\n' +
                 '\t\t\t\t\t\t\t\t\t\t</td>\n' +
                 '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1">\n' +
-                '\t\t\t\t\t\t\t\t\t\t\t<p class="mt-0 mb-0">'+i+'</p>\n' +
+                '\t\t\t\t\t\t\t\t\t\t\t<p class="mt-0 mb-0">'+index+'</p>\n' +
                 '\t\t\t\t\t\t\t\t\t\t</td>\n' +
                 '\t\t\t\t\t\t\t\t\t\t<td class="tg-cly1">\n' +
-                '\t\t\t\t\t\t\t\t\t\t\t<p class="mt-0  mb-0 font-weight-bold">'+i+'</p>\n' +
+                '\t\t\t\t\t\t\t\t\t\t\t<p class="mt-0  mb-0 font-weight-bold">'+index+'</p>\n' +
                 '\t\t\t\t\t\t\t\t\t\t</td>\n' +
                 '\t\t\t\t\t\t\t\t\t</tr>\n' +
                 '\t\t\t\t\t\t\t\t\t<tr>\n' +
