@@ -2,9 +2,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
 	<meta charset="utf-8">
-	<title>Призовой тир</title>
+	<title>Ингос Слова</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="_basic/i/logog1.png">
+	<link rel="icon" href="_basic/i/Ingos_logo.png">
 	<!-- AOS 3.0.0-beta.6 plugin CSS (Animations) -->
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&family=Overpass:wght@100;200;300;400;500;600;700;800;900&subset=latin&display=swap"
@@ -22,36 +22,36 @@
 		html {
 			background-color: var(--bs-blue);
 		}
+		html{
+			background-image: url(_basic/html_images/background.png);
+			background-repeat: no-repeat;
+			background-position: center top;
+			background-attachment: fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		body {
+			background-image: url(_basic/html_images/background.png);
+			background-repeat: no-repeat;
+			background-position: center top;
+			background-attachment: fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			margin: 0;
+			padding: 0;
+		}
+
+
 	</style>
 </head>
 <body>
-<nav class="sticky-top py-2 bg-game shadow-sm" style="opacity: 80%">
-	<div class="d-block">
-		<div class="container">
-			<div class="row justify-content-end align-items-center">
-				<div class="text-start col-3 col-lg-1">
-					<button class="btn mb-2 text-white shadow button-19 bsm goto-help" style="">
-						?
-					</button>
-				</div>
-				<div class="text-start col-3 col-lg-5">
-
-				</div>
-				<div class="text-start col-3 col-lg-5">
-
-				</div>
-				<div class="text-end col-3 col-lg-1">
-					<button class="btn mb-2 text-white shadow button-19 bsm goback" style="display: none">
-						Назад
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</nav>
-
 <!-- REWARDS -->
-<section class="text-center bg-position-center bg-size-fit-y bg-game tasks no-main" style="top: 0px; display: none">
+<div class="text-center bg-position-center bg-size-fit-y  tasks no-main" style="top: 0px; display: none">
 	<div class="container col-xxl-12">
 		<div class="flex-md-row w-auto row  pt-xxl-8">
 			<div class="col-md-3"></div>
@@ -103,7 +103,7 @@
 			<div class="col-md-3"></div>
 		</div>
 	</div>
-</section>
+</div>
 
 
 <!--Loader overlay-->
